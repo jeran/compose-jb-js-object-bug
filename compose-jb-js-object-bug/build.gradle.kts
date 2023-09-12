@@ -12,6 +12,9 @@ kotlin {
     }
 
     sourceSets {
+        all {
+            languageSettings.optIn("kotlin.js.ExperimentalJsExport")
+        }
         getByName("commonMain") {
             dependencies {
 

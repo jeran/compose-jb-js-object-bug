@@ -1,3 +1,2 @@
-fun main() {
-
-}
+@JsExport
+object MyObject
