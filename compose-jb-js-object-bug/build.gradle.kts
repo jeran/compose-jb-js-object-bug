@@ -6,7 +6,7 @@ version = "0.0.0"
 
 kotlin {
     js(IR) {
-        browser()
+        nodejs()
         binaries.executable()
         generateTypeScriptDefinitions()
     }
