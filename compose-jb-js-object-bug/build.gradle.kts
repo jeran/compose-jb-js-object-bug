@@ -1,4 +1,5 @@
 plugins {
+    id("org.jetbrains.compose")
     id("org.jetbrains.kotlin.multiplatform")
 }
 
@@ -17,7 +18,7 @@ kotlin {
         }
         getByName("commonMain") {
             dependencies {
-
+                implementation(compose.runtime)
             }
         }
         getByName("jsMain") {
